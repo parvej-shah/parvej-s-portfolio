@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: #e7d9e1;
+    
+}
+header{
+    margin: 0.5em 1em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.nav-item{
+    color: #2b161b;
+    font-size: 17px;
+    font-family: "Open Sans",sans-serif;
+    padding: 0 17px;
+    transition: transform 0.3s ease
+}
+.nav-item:hover{
+    transform: scale(1.1);
+    color: #608e9e
+}
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+.logo{
+    margin-right: auto;
+    font-family: "Silkscreen" ,serif;
+    font-size: 2.5em;
+    background-image: url(./images/logo1.png);
+    width: 100px;
+    height: 50px;
+    background-size: cover;
+}
+ /* Set up cursor blinking */
+ .typing-effect::after {
+    content: '|';
+    animation: cursor-blink 0.7s infinite;
+  }  
+  /* Define typing animation */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  /* Apply typing animation */
+  .typing-effect {
+    overflow: hidden;
+    border-right: 2px solid; /* Adjust thickness and style as needed */
+    white-space: nowrap;
+    animation: typing 4s steps(40, end); /* Adjust timing as needed */
+  }
+  /* Cursor blink animation */
+  @keyframes cursor-blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.profile-pic{
+    height: 600px;
+    width: 500px;
+    background-image: url(./images/Main1.png);
+    background-size: cover;
+}
+.name{
+    font-size: 65px;
+    font-family: "Playfair Display",serif;
+    font-weight: 1200;
+    color: #002D5B;
+    /* margin-bottom: 15px; */
+    line-height: 1.8;
+}
+.intro{
+    font-size:55px;
+    font-family: "Roboto Slab",sans-serif;
+    color:#608e9e;
+    font-weight: 500;
+    margin-bottom: 0.8em;
+}
+.main-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.5em;
+    margin-left: 1em;
+
+}
+.links-item{
+    transition: transform 0.3s ease;
+}
+.links-item:hover{
+    color: #608e9e;
+    transform: scale(1.1);
+}
+.left-display{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-shrink: 1;
+}
+.info{
+    color: #453e3e;
+    font-family: "Open Sans",sans-serif;
+    font-size: 17px;
+    margin-bottom: 3em;
+    line-height: 1.8;
+    font-weight:lighter;
+}
+.meeting-btn{
+    padding: 15px 30px;
+    width: max-content;
+    font-size: 16px;
+    font-family: "Open Sans",sans-serif;
+    border: 0;
+    background-color: #608e9e;
+    color:white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.meeting-btn:hover{
+    background-color: white;
+    color: #002D5B;
+    transform: scale(1.1)
+}
+.rounded-div{
+    /* border-top-right-radius: 5000%; */
+    background: linear-gradient(to bottom,#e7d9e1,#608e9e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.languages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
+}
+.item{
+    text-align: center;
+    padding: 1rem;
+    font-family: "Playfair Display",sans-serif;
+    font-size: 1.5em;
+}
+.item-img{
+    height: 150px;
+    width: 150px;
+}
+.item-img1{
+    background-image: url(./images/html.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-img2{
+    background-image: url(./images/css-64.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-img3{
+    background-image: url(./images/javascript.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-img4{
+    background-image: url(./images/react.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-img5{
+    background-image: url(./images/python.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-img6{
+    background-image: url(./images/django-192.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+hr{
+    border: 0.5px solid #608e9e;
+    width: 3em;
+    margin-bottom: 1em;
+}
+.service{
+    font-size: 38px;
+    color:#2b161b;
+    font-family: "Playfair Display",serif;
+}
+.service-info{
+    font-family: "Open Sans",sans-serif;
+    font-size: 1.5rem;
+}

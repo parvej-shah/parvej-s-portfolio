@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parvej Shah</title>
+    <link rel="icon" href="./images/Main1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-...your-integrity-hash-here..." crossorigin="anonymous">
+
+</head>
+<body>
+    
+<header>
+    <div class="navbar">
+        <li class="logo nav-item"> </li>
+        <li class="nav-item"> <a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="">About Me</a></li>
+        <li class="nav-item"><a href="cv.html">CV</a></li>
+        <li class="nav-item"> <a href="">Contact</a></li>
+    </div>
+    <div class="main-display">
+        <div class="left-display">
+            <h1 class="name">I'm Parvej Shah</h1>
+            <p class="intro typing-effect">Full Stack Web Developer</p>
+            <div class="info">Passionate web development student with a flair for creativity and problem-solving. Dedicated to mastering full-stack proficiency. Eager to showcase my skills and contribute innovative solutions. Enthusiastic about creating engaging and user-friendly web experiences. Committed to continuous learning and growth in the dynamic field of technology.</div>
+            <button class="meeting-btn" type="submit">BOOK A MEETING</button>
+        </div>
+        <div class="profile-pic"></div>
+        <div class="social-media-links">
+            <a class="links-item" href="#"><i class="fab fa-facebook"></i></a><a class="links-item" href="#"><i class="fab fa-linkedin"></i></a><a class="links-item" href="#"><i class="fab fa-instagram"></i></a>
+            
+
+        </div>
+    </div>
+</header>
+<div class="rounded-div">
+   <h3 class="service">Services<br></h3><hr>
+   <p class="service-info">Full Stack web development with-</p>
+   <div class="languages">
+    <div class="item">
+        <div class="item-img item-img1"></div>
+        <p class="item-name">HTML5</p>
+    </div>
+    <div class="item">
+        <div class="item-img item-img2"></div>
+        <p class="item-name">CSS3</p>
+    </div>
+    <div class="item">
+        <div class="item-img item-img3"></div>
+        <p class="item-name">JavaScript</p>
+    </div>
+    <div class="item">
+        <div class="item-img item-img4"></div>
+        <p class="item-name">React</p>
+    </div>
+    <div class="item">
+        <div class="item-img item-img5"></div>
+        <p class="item-name">Python</p>
+    </div>
+    <div class="item">
+        <div class="item-img item-img6"></div>
+        <p class="item-name">Django</p>
+    </div>
+   </div>
+</div>
+
+<script>
+    // Get the element with the typing effect
+const typingEffect = document.querySelector('.typing-effect');
+
+
+// Function to start typing animation
+function startTypingAnimation() {
+typingEffect.style.animation = 'typing 4s steps(40, end) forwards'; // Adjust timing as needed
+}
+
+// Function to reset typing animation
+function resetTypingAnimation() {
+typingEffect.style.animation = 'none';
+void typingEffect.offsetWidth; // Trigger reflow
+/* typingEffect.style.animation = 'typing 5s steps(60, end) forwards'; */ // Adjust timing as needed
+setTimeout(startTypingAnimation, 2000); // Wait for 3 seconds before starting typing animation again
+}
+
+// Start the typing animation
+startTypingAnimation();
+
+// Listen for animation end event
+typingEffect.addEventListener('animationend', () => {
+// Reset typing animation after animation ends
+resetTypingAnimation();
+});
+</script>
+</body>
+</html>
